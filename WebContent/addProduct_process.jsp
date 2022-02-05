@@ -35,10 +35,12 @@
 		pstmt.executeUpdate();
 		System.out.println("상품 등록 성공");
 		%>
+		
 		<script>
 			alert("등록이 완료되었습니다!");
 			location.href="productSelect.jsp";
 		</script>
+		
 		<%		
 	}catch(SQLException e){
 		System.out.println("상품 등록 실패");

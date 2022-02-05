@@ -70,6 +70,10 @@ th {
 			document.form.submit();
 		}
 	}
+	
+	function retry(){
+		location.href="index.jsp";
+	}
 </script>
 </head>
 <body>
@@ -121,7 +125,7 @@ th {
 				<tr id="btn_tr">
 					<td colspan=2 align=center>
 					<input id="btn" type="button" value="등록" onclick="check()"> 
-					<input id="btn" type="reset" value="취소"></td>
+					<input id="btn" type="reset" value="취소" onclick="retry()"></td>
 				</tr>
 			</table>
 		</form>
