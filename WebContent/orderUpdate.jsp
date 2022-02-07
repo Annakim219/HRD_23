@@ -174,7 +174,7 @@ th {
 		}
 	%>
 	<section>
-		<h2>주문 정보 등록</h2>
+		<h2>주문 정보 수정</h2>
 		<form name="form" method="post" action="orderUpdate.jsp">
 			<table id="tab" border=1>
 				<tr>

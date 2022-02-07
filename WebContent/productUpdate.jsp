@@ -103,7 +103,7 @@ th {
 				System.out.println("데이터 조회 성공");
 				%>
 
-		<h2>상품 등록 화면</h2>
+		<h2>상품 수정 화면</h2>
 		<form name="form" method="post" action="productUpdate_process.jsp">
 			<table id="tab" border=1>
 				<tr>
