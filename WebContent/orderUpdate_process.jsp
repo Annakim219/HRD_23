@@ -63,12 +63,14 @@
 		<%		
 	}catch(SQLException e){
 		System.out.println("주문 등록 실패");
+		%>
+		<script>
+			alert("수정이 실패하였습니다.");
+			history.back(-1);
+		</script>
+		<%
 		e.printStackTrace();
 	}
 %>
-		<script>
-			alert("등록에 실패하였습니다!");
-			history.back(-1);
-		</script>
 </body>
 </html>

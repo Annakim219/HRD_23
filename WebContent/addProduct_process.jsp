@@ -44,12 +44,14 @@
 		<%		
 	}catch(SQLException e){
 		System.out.println("상품 등록 실패");
-		e.printStackTrace();
-	}
-%>
+		%>
 		<script>
 			alert("등록에 실패하였습니다!");
 			history.back(-1);
 		</script>
+		<%
+		e.printStackTrace();
+	}
+%>
 </body>
 </html>

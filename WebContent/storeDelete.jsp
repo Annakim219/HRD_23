@@ -10,31 +10,31 @@
 <%@ include file="DBconn.jsp" %>
 <%
 	PreparedStatement pstmt = null;
-	String id = request.getParameter("id");
+	String storeNo = request.getParameter("storeNo");
 
 	try{
-		String sql = "delete from member0203 where id=?";
+		String sql = "delete from store0203 where storeNo=?";
 		pstmt = conn.prepareStatement(sql);
-		pstmt.setString(1, id);
+		pstmt.setString(1, storeNo);
 		pstmt.executeUpdate();
-		System.out.println("회원 삭제 성공");
+		System.out.println("거래처 삭제 성공");
 %>
 	<script>
-		alert("회원 삭제 성공");
-		location.href="memberSelect.jsp";
+		alert("거래처 삭제 성공");
+		location.href="storeSelect.jsp";
 	</script>
 <%		
 	}catch(SQLException e){
-		System.out.println("회원 삭제 실패");
+		System.out.println("거래처 삭제 실패");
 		%>
 		<script>
 			alert("삭제에 실패하였습니다.");
-			location.href="memberSelect.jsp";
+			location.href="storeSelect.jsp";
 		</script>
 		<% 
 		e.printStackTrace();
 	}
 %>
-
+	
 </body>
 </html>

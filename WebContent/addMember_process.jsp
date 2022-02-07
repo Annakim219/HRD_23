@@ -53,12 +53,15 @@
 <%		
 	}catch(SQLException e){
 		System.out.println("회원 가입 등록 실패");
+		%>
+		<script>
+		alert("등록 실패");
+		history.back(-1);
+		</script>
+	<%
 		e.printStackTrace();
 	}
 %>
-	<script>
-		alert("등록 실패");
-		history.back(-1);
-	</script>
+
 </body>
 </html>

@@ -26,12 +26,14 @@
 <%		
 	}catch(SQLException e){
 		System.out.println("상품 삭제 실패");
+		%>
+		<script>
+			alert("삭제에 실패하였습니다.");
+			location.href="productSelect.jsp";
+		</script>
+		<% 
 		e.printStackTrace();
 	}
 %>
-	<script>
-		alert("삭제가 실패하였습니다.");
-		location.href="productSelect.jsp";
-	</script>
 </body>
 </html>

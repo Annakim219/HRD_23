@@ -53,12 +53,15 @@
 <%		
 	}catch(SQLException e){
 		System.out.println("회원 정보 수정 실패");
+		%>
+		<script>
+			alert("수정이 실패하였습니다.");
+			history.back(-1);
+		</script>
+		<%
 		e.printStackTrace();
 	}
 %>
-	<script>
-		alert("수정이 실패하였습니다.");
-		history.back(-1);
-	</script>
+
 </body>
 </html>
