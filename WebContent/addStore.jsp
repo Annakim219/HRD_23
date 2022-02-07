@@ -82,7 +82,7 @@ th {
 		int num = 0;
 		
 		try{
-			String sql = "select storeNo_seq.nextval from board";
+			String sql = "select storeNo_seq.nextval from dual";
 			pstmt = conn.prepareStatement(sql);
 			rs = pstmt.executeQuery();
 			if(rs.next()){
